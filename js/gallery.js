@@ -15,17 +15,15 @@ function activateGallery() {
             thumbnail.parentElement.classList.add(currentClass);
 
             //Changes the main image.
-            setTimeout(() => {
-                let imgSrc = thumbnail.dataset.largeVersion;
-                mainImage.setAttribute("src", imgSrc);
-                mainImage.setAttribute("alt", thumbnail.alt);
-    
-                //Changes the image info in Column 3.
-                let imgTitle = thumbnail.dataset.title;
-                let imgDescription = thumbnail.dataset.description;
-                imageHead.innerHTML = imgTitle;
-                imagePara.innerHTML = imgDescription;
-            }, 200);
+            let imgSrc = thumbnail.dataset.largeVersion;
+            mainImage.setAttribute("src", imgSrc);
+            mainImage.setAttribute("alt", thumbnail.alt);
+
+            //Changes the image info in Column 3.
+            let imgTitle = thumbnail.dataset.title;
+            let imgDescription = thumbnail.dataset.description;
+            imageHead.innerHTML = imgTitle;
+            imagePara.innerHTML = imgDescription;
         })
     })
     
