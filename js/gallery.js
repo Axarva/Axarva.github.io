@@ -8,7 +8,8 @@ function activateGallery() {
         thumbnail.addEventListener("click", function() {
              // Preload large images.
              let largeVersion = new Image();
-             largeVersion.src = thumbnail.dataset.largeVersion
+             largeVersion.src = thumbnail.dataset.largeVersion;
+             
             //Changes the selected image borders.
             document.querySelector(".current").classList.remove(currentClass);
             thumbnail.parentElement.classList.add(currentClass);
