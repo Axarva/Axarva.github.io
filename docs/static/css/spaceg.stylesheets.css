@@ -302,7 +302,7 @@ img#small-img-nav {
   max-width: 70vh;
 }
 .post-info {
-  flex: 1 1 50%;
+  flex: 0 0 50%;
 }
 
 }
@@ -417,6 +417,8 @@ img.img-circle.portfolio-link.img-responsive {
   .post-flex > img {
     order: 0 !important;
     padding: 10px;
+    width: auto;
+    height: 80%;
   }
   #posts {
     padding-top: 1rem;
