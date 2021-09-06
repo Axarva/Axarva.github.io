@@ -371,12 +371,12 @@ img.img-circle.portfolio-link.img-responsive {
 }
 .post-flex:nth-child(odd) > img {
   order: 0;
-  flex: 1;
+  /* flex: 1; */
   border-radius: 10px;
 }
 .post-flex:nth-child(even) > img {
   order: 2;
-  flex: 1;
+  /* flex: 1; */
   border-radius: 10px;
 }
 
