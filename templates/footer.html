@@ -1,0 +1,52 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    $if(github_username)$
+                    <li>
+                        <a href="https://github.com/$github_username$" target="_blank">
+                            <span class="fa-stack fa-lg">
+
+                                <!-- <i class="fa fa-arrow-circle-o-down"></i> -->
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    $endif$
+                    $if(instagram_username)$
+                    <li>
+                        <a href="https://instagram.com/$instagram_username$" target="_blank">
+                            <span class="fa-stack fa-lg">
+<!-- 
+                                <i class="fa fa-arrow-circle-o-down"></i>
+                                <i class="fa fa-circle fa-stack-2x"></i> -->
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    $endif$
+                    <li>
+                        <a href="https://www.linkedin.com/in/atharva-timsina-630b15217/" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Axarva 2021. <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="$baseurl$/static/js/jquery.min.js"></script>
+<script src="$baseurl$/static/js/spaceg.stylesheets.min.js"></script>
+<script src="$baseurl$/static/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script src="$baseurl$/static/js/scripts.js"></script>
+
