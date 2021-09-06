@@ -417,8 +417,6 @@ img.img-circle.portfolio-link.img-responsive {
   .post-flex > img {
     order: 0 !important;
     padding: 10px;
-    width: auto;
-    height: 80%;
   }
   #posts {
     padding-top: 1rem;
