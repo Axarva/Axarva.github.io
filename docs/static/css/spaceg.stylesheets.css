@@ -104,7 +104,7 @@ https://www.twitter.com/LucasGatsas
     .intro-header .post-heading .subheading,.intro-header .post-heading .meta{line-height:1.1;display:block}
     .intro-header .post-heading .subheading{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;margin:10px 0 30px;font-weight:400;}
 		.intro-header .post-heading .meta{font-family:'Playfair Display', Times, serif;font-style:italic;font-weight:300;font-size:20px;}
-		.intro-header .post-heading .meta a{}
+		/* .intro-header .post-heading .meta a{} */
 @media only screen and (min-width: 768px){.intro-header .post-heading h1{font-size:55px}
 		.intro-header .post-heading .subheading{font-size:30px;}}
 		.post-preview > a{color:#404040}.post-preview > a:hover,.post-preview > a:focus{text-decoration:none;color:#BBB}
@@ -118,7 +118,7 @@ https://www.twitter.com/LucasGatsas
     .list-inline{margin:0;padding:0}footer .copyright{font-size:14px;text-align:center;margin-bottom:0}
     .floating-label-form-group{font-size:14px;position:relative;margin-bottom:0;padding-bottom:.5em;border-bottom:1px solid #eee}
     .floating-label-form-group input,.floating-label-form-group textarea{z-index:1;position:relative;padding-right:0;padding-left:0;border:none;border-radius:0;font-size:1.5em;background:none;box-shadow:none!important;resize:none}
-    .floating-label-form-group label{display:block;z-index:0;position:relative;top:2em;margin:0;font-size:.85em;line-height:1.764705882em;vertical-align:middle;vertical-align:baseline;opacity:0;-webkit-transition:top .3s ease,opacity .3s ease;-moz-transition:top .3s ease,opacity .3s ease;-ms-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease}
+    .floating-label-form-group label{display:block;z-index:0;position:relative;top:2em;margin:0;font-size:.85em;line-height:1.764705882em;opacity:0;-webkit-transition:top .3s ease,opacity .3s ease;-moz-transition:top .3s ease,opacity .3s ease;-ms-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease}
     .floating-label-form-group::not(:first-child){padding-left:14px;border-left:1px solid #eee}
     .floating-label-form-group-with-value label{top:0;opacity:1}
     .floating-label-form-group-with-focus label{color:#0085a1}
@@ -130,7 +130,7 @@ https://www.twitter.com/LucasGatsas
     .pager li > a:hover,.pager li > a:focus{color:#fff;background-color:#0D0D0D;border:1px solid #0D0D0D}
     .pager .disabled > a,.pager .disabled > a:hover,.pager .disabled > a:focus,.pager .disabled > span{color:gray;background-color:#404040;cursor:not-allowed}::-moz-selection{color:#fff;text-shadow:none;background:#0085a1}
     ::selection{color:#fff;text-shadow:none;background:#404040}img::selection{color:#fff;background:transparent}img::-moz-selection{color:#fff;background:transparent}
-    body{webkit-tap-highlight-color:#0085a1}code{padding:2px 4px;font-size:90%;color:#969696;background-color:#f9f2f4;border-radius:4px}
+    code{padding:2px 4px;font-size:90%;color:#969696;background-color:#f9f2f4;border-radius:4px}
     nav.navbar.navbar-inverse.navbar-fixed-bottom{background-color:#2E3440;border-color:#2E3440}
     .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus{color:#222;background-color:transparent}
     img#small-img-nav{margin-bottom:40px;margin-top:-10px}.navbar-inverse .navbar-toggle .icon-bar{background-color:#717171}
@@ -297,7 +297,15 @@ img#small-img-nav {
 	display:none;
   margin-bottom: 40px;
   margin-top: -10px;
-}}
+}
+.post-flex > img {
+  max-width: 70vh;
+}
+.post-info {
+  flex: 1 1 50%;
+}
+
+}
 .img-circle {
   border-radius: 50%;
 }
