@@ -304,6 +304,7 @@ img#small-img-nav {
 .post-info {
   flex: 0 1 45%;
   word-wrap: break-word;
+  max-width: 50%;
 }
 
 }
