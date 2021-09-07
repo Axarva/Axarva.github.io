@@ -445,3 +445,16 @@ img.img-circle.portfolio-link.img-responsive {
 .post-img img {
   border-radius: 10px;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: #000000; 
+  border-radius: 10px
+}   
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}    
