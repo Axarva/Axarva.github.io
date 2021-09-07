@@ -302,7 +302,8 @@ img#small-img-nav {
   max-width: 45%;
 }
 .post-info {
-  flex: 0 0 50%;
+  flex: 0 1 45%;
+  word-wrap: break-word;
 }
 
 }
