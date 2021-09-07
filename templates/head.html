@@ -187,15 +187,4 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
         }
     </style>
     <!-- end Loading front stylesheet here -->
-    <script>
-        var w = window.innerWidth
-        if (w > 1366) {
-            var elements = document.getElementsByClassName('post-flex')
-            var flexwidth = elements[0].clientWidth;
-            var imgwidth = 0.40 * flexwidth;
-            Array.from(elements).forEach((element) => element.style.width = imgwidth);
-            Array.from(elements).forEach((element) => element.style.height = 'auto');
-            console.log("foo");
-        }
-    </script>
 </head>

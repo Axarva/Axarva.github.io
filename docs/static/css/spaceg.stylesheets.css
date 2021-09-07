@@ -298,9 +298,9 @@ img#small-img-nav {
   margin-bottom: 40px;
   margin-top: -10px;
 }
-/* .post-flex > img {
-  max-width: 70vh;
-} */
+.post-flex > img {
+  max-width: 45%;
+}
 .post-info {
   flex: 0 0 50%;
 }
