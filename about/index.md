@@ -12,7 +12,5 @@ Go around this website to see more about the projects I'm working on. I'd love t
 <div class="post-img">
 ![](/static/img/beach.png)
 
-Here's me standing on a beach away from home..
-
 </div>
 
