@@ -4,5 +4,5 @@ github: https://github.com/Axarva/haskell-stuff
 ---
 
 A bunch of short Haskell scripts with various functions.
-Quite random, but can be handy for quick reference.
+This is basically my set of solutions to the work in Coursera's DSA specialization.
 

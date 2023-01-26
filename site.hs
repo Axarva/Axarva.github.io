@@ -12,7 +12,7 @@ config = defaultConfiguration
   }
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match "static/*/*" $ do
         route idRoute
         compile copyFileCompiler
@@ -72,6 +72,6 @@ siteCtx :: Context String
 siteCtx =
     constField "baseurl" "http://localhost:8000" `mappend`
     constField "site_description" "You've landed on my website" `mappend`
-    constField "instagram_username" "axarva_27" `mappend`
+    constField "instagram_username" "atharva_timsina" `mappend`
     constField "github_username" "Axarva" `mappend`
     defaultContext
