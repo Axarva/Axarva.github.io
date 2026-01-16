@@ -26,7 +26,7 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    create ["blog.html"] $ do
+    create ["blog/index.html"] $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
@@ -43,9 +43,15 @@ main = hakyllWith config $ do
     match "index.html" $ do
         route idRoute
         compile $ do
+            posts <- recentFirst =<< loadAll "posts/*"
+            let indexCtx =
+                    listField "posts" postCtx (return (take 3 posts)) `mappend`
+                    constField "title" "Home"                         `mappend`
+                    siteCtx
+
             getResourceBody
-                >>= applyAsTemplate siteCtx
-                >>= loadAndApplyTemplate "templates/default.html" siteCtx
+                >>= applyAsTemplate indexCtx
+                >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateCompiler
@@ -54,10 +60,14 @@ main = hakyllWith config $ do
         route idRoute
         compile copyFileCompiler
 
+    match "pura.pdf" $ do
+        route idRoute
+        compile copyFileCompiler
+
     match "CNAME" $ do
         route   idRoute
         compile copyFileCompiler
-        
+
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =

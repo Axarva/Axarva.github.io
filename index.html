@@ -1,17 +1,43 @@
 ---
 title: Home
 ---
-<div style="margin-top: 15vh;">
+<div class="face-main">
+    <img src="/images/face.png" alt="Axarva">
+</div>
+
+<div style="margin-top: 1vh;">
     <h1>Atharva Timsina</h1>
     <p style="font-size: 1.1rem; color: #a0a0a0; margin-bottom: 2rem;">
-        Software Engineer based in Tsukuba, Japan.<br>
-        Working on compilers, functional programming, and system correctness.
-    </p>
+        CS Undergrad at University of Tsukuba.<br>
+        I write compilers for fun and web backends when the rent is due.<br>
+        Trying to write a blog documenting it all because documentation is important. Trust me.
 
-    <div style="font-family: monospace;">
+    <div style="font-family: monospace; font-size: 0.9rem;">
         <a href="/resume.pdf" style="margin-right: 1.5rem;">[resume]</a>
-        <a href="/blog.html" style="margin-right: 1.5rem;">[blog]</a>
+        <a href="/blog" style="margin-right: 1.5rem;">[blog]</a>
         <a href="https://github.com/Axarva" style="margin-right: 1.5rem;">[github]</a>
         <a href="mailto:timsina@axarva.me">[email]</a>
     </div>
 </div>
+
+
+<section id="recent-posts" style="margin-top: 3rem;">
+    <div class="brand" style="border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-bottom: 1.5rem;">
+        <span style="font-weight: 700;">Recent posts</span>
+    </div>
+
+    <table class="terminal-table">
+        <tbody>
+            $for(posts)$
+            <tr>
+                <td class="date">$date$</td>
+                <td class="name"><a href="$url$">$title$</a></td>
+            </tr>
+            $endfor$
+        </tbody>
+    </table>
+    
+    <div style="margin-top: 1rem; font-family: monospace; font-size: 0.9rem;">
+        <a href="/blog">... view all posts</a>
+    </div>
+</section>

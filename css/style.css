@@ -61,3 +61,97 @@ pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border-radius
 /* Blog List */
 .post-item { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
 .post-date { font-family: monospace; color: var(--acc); }
+
+/* --- Global Header Profile Pic --- */
+
+.face-main img {
+    width: clamp(100px, 15vw, 150px); 
+    aspect-ratio: 1 / 1; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+    display: block;
+}
+/* --- Blog Post Author Chip --- */
+.post-meta {
+    margin-bottom: 2rem;
+    color: #a0a0a0;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.author-chip {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.author-chip img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-chip span {
+    font-weight: 600;
+    color: #e5c07b;
+}
+
+.terminal-header {
+    font-family: monospace;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.terminal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+}
+
+.terminal-table td {
+    padding-bottom: 0.4rem;
+    padding-right: 1.5rem;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.terminal-table .perms { color: #5c6370; } /* Grey for permissions */
+.terminal-table .user  { color: #e5c07b; font-weight: bold; } /* Yellow/Gold for user */
+.terminal-table .group { color: #5c6370; }
+.terminal-table .size  { color: #61afef; } /* Blue for size */
+.terminal-table .date  { color: #abb2bf; }
+
+.terminal-table .name {
+    white-space: normal;
+    text-transform: lowercase; /* Allow titles to wrap if they are long */
+}
+
+.terminal-table .name a {
+    /* color: #e0e0e0; */
+    /* text-decoration: none; */
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.terminal-table .name a:hover {
+    text-decoration: underline;
+    color: #98c379; /* Green on hover */
+}
+
+@media (max-width: 700px) {
+    .terminal-table .perms, 
+    .terminal-table .user, 
+    .terminal-table .group, 
+    .terminal-table .size {
+        display: none;
+    }
+    .terminal-header {
+        font-size: 0.85rem;
+    }
+}

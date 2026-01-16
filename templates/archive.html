@@ -1,13 +1,19 @@
-<h1>Thoughts</h1>
-<p style="color: #a0a0a0; margin-bottom: 2rem;">
-    I sometimes write stuff (mostly complain) about type theory, system internals, and the occasional existential crisis.
-</p>
+<div class="terminal-header">
+    <span style="color: #a0a0a0;">axarva@axarva.me:~/posts&dollar; </span> ls -l --sort=date
+</div>
 
-<ul style="list-style: none; padding: 0;">
-    $for(posts)$
-        <li class="post-item">
-            <a href="$url$">$title$</a>
-            <span class="post-date">$date$</span>
-        </li>
-    $endfor$
-</ul>
+<table class="terminal-table">
+    <tbody>
+        $for(posts)$
+        <tr>
+            <td class="perms">-rw-r--r--</td>
+            <td class="user">axarva</td>
+            <td class="group">staff</td>
+            <td class="size">4.0K</td>
+            <td class="date">$date$</td>
+            <td class="name"><a href="$url$">$title$</a></td>
+        </tr>
+        $endfor$
+        
+        </tbody>
+</table>
