@@ -48,9 +48,11 @@
 <p>And I understand. I really do, I felt the exact same way when I began writing Pura (except I forgot to write about WHAT I was doing), and now that I’ve finally realized “<em>Hm, I should’ve probably written about this somewhere except the report in human-readable terms</em>”, fear not. As I further develop Pura (which I will), I’ll be filling you out from the beginning of the project little by little, with both progress updates and explanations. I’ll also likely be reading <a href="https://craftinginterpreters.com/">Crafting Interpreters</a> and implementing Lox, so I’ll add a little of that stuff as well.</p>
 <p>Funny how “X is officially complete!” is the beginning of the whole thing here, but well, if anyone’s reading, bear with me.</p>
 <p>And since this <em>is</em> my first blog post, well:</p>
-<pre><code>main :: IO ()
- main = putStrLn &quot;Hello World!&quot;
+<pre><code>main :: Unit
+let main = print &quot;Hello World!&quot; REQUIRES ConsoleWrite
 </code></pre>
+<hr />
+<p>Edit 2025/01/22 : Converted Haskell to Pura as suggested by a friend because, well, I <em>did</em> make a language.</p>
 </article>
     </main>
 
